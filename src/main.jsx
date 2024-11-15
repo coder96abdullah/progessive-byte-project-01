@@ -7,6 +7,7 @@ import {
 import "./index.css";
 import Root from "./Components/Root/Root";
 import Home from "./Components/Home/Home/Home";
+import ExpenseSummaryRow from "./Components/ExpenseSummary/ExpenseSummaryRow";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Home></Home>
+      },
+      {
+        path:'/expenseSummary',
+        element:<ExpenseSummaryRow></ExpenseSummaryRow>
       }
     ]
   },

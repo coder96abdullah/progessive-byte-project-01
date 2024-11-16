@@ -17,7 +17,7 @@ const ExpenseSummary = () => {
     
     
     return (
-        <div className="bg-white rounded-xl my-10 mx-10 pt-10 py-5">
+        <div className="bg-white rounded-xl my-10 mx-7 pt-10 py-5">
             <div className="text-[#1B2559] text-[16px] font-[700] pl-10 my-5">
                 <p>Report: Expense Summary</p>
                 <p>Duration: Jan 2024-Dec 2024</p>
@@ -171,7 +171,7 @@ const ExpenseSummary = () => {
         <td>${bills[1].ProductSales[11]}</td>
       </tr>
       <tr>
-        <th className="text-[16px] font-[500] text-[#1B2559]" colSpan="2">Expense = Payment+Bill</th>
+        <th className="text-[16px] font-[500] text-[#1B2559]" colSpan="3">Expense = Payment+Bill</th>
         <td></td>
         <td></td>
         <td></td>

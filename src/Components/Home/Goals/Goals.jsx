@@ -1,7 +1,60 @@
 
 import { FaSortDown } from "react-icons/fa";
+import ReactECharts from 'echarts-for-react';
 
 const Goals = () => {
+  const option = {
+    color: ['#5B93FF', '#ECEEFF'], 
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        top: '5%',
+        left: 'center'
+    },
+    series: [
+        {
+            name: 'Access From',
+            type: 'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                show: true,
+                position: 'center',
+                formatter: '{a|50%}\n{b|Used}', // Multiline text
+                rich: {
+                    a: {
+                        fontSize: 16,
+                        color: '#2B3674', // Blue color for "Used"
+                        fontWeight: 'bold'
+                    },
+                    b: {
+                        fontSize: 16,
+                        color: '#1A16F3', // Dark color for "50%"
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: 40,
+                    fontWeight: 'bold',
+                    color: '#2B3674'
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                { value: 500, name: '' },
+                { value: 500, name: '' }
+            ]
+        }
+    ]
+};
+
+
   const goals = [
     {
         Name: "Bill Goal",
@@ -83,7 +136,10 @@ const Goals = () => {
       
       </div>
       <div className='col-span-1 bg-white rounded-2xl'>
-        <p className="text-[#2B3674] text-[24px] font-[700]">Storage Limit</p>
+        <p className="text-[#2B3674] text-[24px] font-[700] pl-10 pt-10">Storage Limit</p>
+        <ReactECharts option={option} style={{ height: '400px', width: '100%' }} />
+        <p className="text-[#2B3674] text-[16px] font-[700] text-center -mt-12">1000 MB/2000MB</p>
+
       </div>
      </div>
         </div>

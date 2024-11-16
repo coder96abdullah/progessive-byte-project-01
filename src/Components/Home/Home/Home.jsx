@@ -9,10 +9,13 @@ import LatestExpence from '../LatestExpence/LatestExpence';
 import TotalReveneu from '../TotalReveneu/TotalReveneu';
 import Goals from '../Goals/Goals';
 import CashFlow from '../CashFlow/CashFlow';
+import Navbar from '../../Navbar/Navbar';
 
 const Home = () => {
     return (
-        <div className='px-8'>
+        <div>
+          <Navbar></Navbar>
+          <div className='px-8'>
           <FirstHeading></FirstHeading> 
           <TotalReveneu></TotalReveneu> 
           <CashFlow></CashFlow>
@@ -23,6 +26,8 @@ const Home = () => {
           <WeeklyStatistic></WeeklyStatistic>
           <RecentBills></RecentBills>        
           <Goals></Goals>
+          </div>
+     
          
           
         </div>

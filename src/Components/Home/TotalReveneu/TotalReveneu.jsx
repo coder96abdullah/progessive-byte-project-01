@@ -36,7 +36,7 @@ const TotalRevenue = () => {
 
           <div className='w-full'>
             <BarChart
-              width={760}
+              width={740}
               height={300}
               series={[
                 { data: pData, label: 'Income', id: 'pvId', color: '#4F46E5' },  // Blue color for Income

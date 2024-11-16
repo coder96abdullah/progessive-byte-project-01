@@ -24,7 +24,7 @@ const Sidebar = () => {
   <div className="drawer-side">
     <label htmlFor="my-drawer" className="drawer-overlay"></label>
    <Link to='/'><p className="text-[#F9FAFB] text-[24px] font-[800] pl-10 py-5">Progressive Byte</p></Link> 
-    <ul className="menu p-4 w-50  text-[#F5F5FF] text-[16px] font-[500]">
+    <ul className="menu p-4 w-50  text-[#F5F5FF] text-[16px] font-[500] space-y-2">
       {/* Sidebar content */}
       <li className=""><a><span className="text-white"><MdDashboard /> </span>Dashboard</a></li>
       

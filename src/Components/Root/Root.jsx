@@ -6,10 +6,10 @@ import { Outlet } from 'react-router-dom';
 const Root = () => {
     return (
         <div className='flex' >
-            <div className='w-[15%] bg-black h-auto'>
+            <div className='w-[20%] bg-black h-auto'>
             <Sidebar></Sidebar>
             </div>
-            <div className='w-[85%] bg-gray-200'>
+            <div className='w-[80%] bg-gray-200'>
              <Navbar></Navbar>
              <Outlet></Outlet>
             </div>

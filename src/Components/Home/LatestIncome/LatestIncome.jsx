@@ -52,7 +52,7 @@ const LatestIncome = () => {
         <div className='my-10'>
             <div className='grid grid-cols-3 gap-5'>
                 <div className='bg-white col-span-2 rounded-2xl p-5'>
-                    <p className='text-[#1B2559] text-[20px] font-[700] py-5'>Latest Income</p>
+                    <p className='text-[#1B2559] text-[20px] font-[700] py-5 pl-5'>Latest Income</p>
                     <div className="overflow-x-auto">
                         <table className="table-auto w-full">
                             {/* Table Head */}

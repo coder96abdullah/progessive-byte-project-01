@@ -42,8 +42,8 @@ const Goals = () => {
 
     
     return (
-        <div>
-     <div className='grid grid-cols-3 gap-5'>
+        <div className="mb-10">
+     <div className='grid grid-cols-3 gap-5 '>
       <div className='col-span-2 bg-white p-10 rounded-2xl'>
         <div className='flex justify-between items-center pb-5'>
           <p className='text-[#1B2559] text-[24px] font-[700]'>Goals</p>

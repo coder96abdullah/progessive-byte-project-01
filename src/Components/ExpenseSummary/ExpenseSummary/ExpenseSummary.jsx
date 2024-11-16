@@ -171,7 +171,7 @@ const ExpenseSummary = () => {
         <td>${bills[1].ProductSales[11]}</td>
       </tr>
       <tr>
-        <th className="text-[16px] font-[500] text-[#1B2559]">Expense = Payment+Bill</th>
+        <th className="text-[16px] font-[500] text-[#1B2559]" colSpan="2">Expense = Payment+Bill</th>
         <td></td>
         <td></td>
         <td></td>

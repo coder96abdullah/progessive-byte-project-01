@@ -13,16 +13,18 @@ import CashFlow from '../CashFlow/CashFlow';
 const Home = () => {
     return (
         <div className='px-8'>
-          <FirstHeading></FirstHeading>  
-          <RecentInvoice></RecentInvoice>
-          <RecentBills></RecentBills>
-          <WeeklyStatistic></WeeklyStatistic>
+          <FirstHeading></FirstHeading> 
+          <TotalReveneu></TotalReveneu> 
+          <CashFlow></CashFlow>
           <Meeting></Meeting>
           <LatestIncome></LatestIncome>
           <LatestExpence></LatestExpence>
+          <RecentInvoice></RecentInvoice>
+          <WeeklyStatistic></WeeklyStatistic>
+          <RecentBills></RecentBills>        
           <Goals></Goals>
-          <CashFlow></CashFlow>
-          <TotalReveneu></TotalReveneu>
+         
+          
         </div>
     );
 };
